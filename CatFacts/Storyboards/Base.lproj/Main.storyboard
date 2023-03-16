@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cat View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CatViewController" customModule="CatFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIj-lr-7rZ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ra-SW-v36" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="762.66666666666663"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultCat" translatesAutoresizingMaskIntoConstraints="NO" id="O5A-YT-ohQ">
+                                                <rect key="frame" x="46.666666666666657" y="50" width="300" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="WPh-Gs-0wv"/>
+                                                    <constraint firstAttribute="height" constant="300" id="wCM-SY-upJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Fun Fact about Cats!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjy-E6-Wbp">
+                                                <rect key="frame" x="99.666666666666686" y="375" width="194" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="kg9-pq-xfE">
+                                                <rect key="frame" x="33" y="419" width="327" height="305.66666666666674"/>
+                                                <string key="text">The word 'cat' in various languages: French: chat; German: katze; Italian: gatto; Spanish/Portugese: gato; Yiddish: kats; Maltese: qattus; Swedish/Norwegian: katt; Dutch: kat; Icelandic: kottur; Greek: catta; Hindu: katas; Japanese:neko; Polish: kot; Ukranian: kotuk; Hawiian: popoki; Russian: koshka; Latin: cattus; Egyptian: mau; Turkish: kedi; Armenian: Gatz; Chinese: mio; Arabic: biss; Indonesian: qitta; Bulgarian: kotka; Malay: kucing; Thai/Vietnamese: meo; Romanian: pisica; Lithuanian: katinas; Czech: kocka; Slovak: macka; Armenian: gatz; Basque: catua; Estonian: kass; Finnish: kissa; Swahili: paka.</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.86078917980000003" green="0.77099203849999998" blue="0.8286260285" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="kg9-pq-xfE" secondAttribute="trailing" constant="25" id="9wp-oq-fxK"/>
+                                            <constraint firstItem="O5A-YT-ohQ" firstAttribute="centerX" secondItem="1Ra-SW-v36" secondAttribute="centerX" id="NCQ-wu-LJl"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="kg9-pq-xfE" secondAttribute="bottom" constant="30" id="RIc-wA-kjC"/>
+                                            <constraint firstItem="Tjy-E6-Wbp" firstAttribute="top" secondItem="O5A-YT-ohQ" secondAttribute="bottom" constant="25" id="Uqp-K2-uS2"/>
+                                            <constraint firstItem="kg9-pq-xfE" firstAttribute="top" secondItem="Tjy-E6-Wbp" secondAttribute="bottom" constant="20" id="WH8-JE-XJa"/>
+                                            <constraint firstItem="kg9-pq-xfE" firstAttribute="leading" secondItem="1Ra-SW-v36" secondAttribute="leadingMargin" constant="25" id="Wpx-fH-919"/>
+                                            <constraint firstItem="Tjy-E6-Wbp" firstAttribute="centerX" secondItem="1Ra-SW-v36" secondAttribute="centerX" id="XNF-6s-0gH"/>
+                                            <constraint firstItem="O5A-YT-ohQ" firstAttribute="top" secondItem="1Ra-SW-v36" secondAttribute="top" constant="50" id="Z8u-t6-KhT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1Ra-SW-v36" firstAttribute="leading" secondItem="kfm-Id-ffu" secondAttribute="leading" id="11v-rt-X9B"/>
+                                    <constraint firstItem="1Ra-SW-v36" firstAttribute="top" secondItem="kfm-Id-ffu" secondAttribute="top" id="CYg-Ie-fjb"/>
+                                    <constraint firstItem="1Ra-SW-v36" firstAttribute="bottom" secondItem="kfm-Id-ffu" secondAttribute="bottom" id="E3b-dV-xTe"/>
+                                    <constraint firstItem="1Ra-SW-v36" firstAttribute="width" secondItem="0gs-Ec-oN3" secondAttribute="width" id="MA3-gc-FfH"/>
+                                    <constraint firstItem="1Ra-SW-v36" firstAttribute="trailing" secondItem="kfm-Id-ffu" secondAttribute="trailing" id="Oxd-kx-WhE"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="kfm-Id-ffu"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0gs-Ec-oN3"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.86078917980194092" green="0.77099203848117537" blue="0.82862602854534673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="YIj-lr-7rZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Iqs-0t-22o"/>
+                            <constraint firstItem="YIj-lr-7rZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gtY-8k-RwA"/>
+                            <constraint firstItem="YIj-lr-7rZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nO9-N1-tEk"/>
+                            <constraint firstItem="YIj-lr-7rZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="okQ-9Y-Are"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="catImageView" destination="O5A-YT-ohQ" id="KXs-IZ-WaA"/>
+                        <outlet property="factLabel" destination="kg9-pq-xfE" id="p8d-Zx-DMF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17.557251908396946" y="2.8169014084507045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DefaultCat" width="100" height="100"/>
+    </resources>
+</document>
